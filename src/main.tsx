@@ -4,7 +4,7 @@ import Home from './pages/Home'
 import { BrowserRouter, Route, Routes } from 'react-router'
 
 createRoot(document.getElementById('root')!).render(
-  <BrowserRouter>
+  <BrowserRouter basename='/igem-gcm'>
     <Routes>
       <Route path="/" element={<Home />} />
     </Routes>
