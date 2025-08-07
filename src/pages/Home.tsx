@@ -17,6 +17,9 @@ import {
   FlaskConical,
 } from "lucide-react";
 import gcmlogo from "/public/gcmlogo.png";
+import bt from "/public/bt.png";
+import ml from "/public/ml.png";
+import jw from "/public/jw.png";
 
 const day1Schedule = [
   { time: "8:30 AM", activity: "Registration & Refreshments" },
@@ -274,8 +277,12 @@ const Home = () => {
             <div className="mx-auto grid max-w-5xl gap-6 py-12 lg:grid-cols-3 lg:gap-12">
               <Card className="text-center">
                 <CardHeader>
-                  <div className="mx-auto w-20 h-20 rounded-full bg-gradient-to-r from-green-400 to-blue-500 flex items-center justify-center mb-4">
-                    <span className="text-white font-bold text-xl">ML</span>
+                  <div className="relative mx-auto w-20 h-20 rounded-full overflow-hidden mb-4">
+                    <img
+                      src={ml}
+                      alt="Dr. Marissa Lithopoulos"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <CardTitle>
                     <a href="https://www.drmarissalithopoulos.com/">
@@ -301,7 +308,10 @@ const Home = () => {
                     and science to make research more inclusive and engaging.
                     Whether in the lab or on the stage, Marissa's all about
                     making science accessible and fun!
-                    <a href="https://www.drmarissalithopoulos.com/" className="ml-1 text-blue-600 hover:underline">
+                    <a
+                      href="https://www.drmarissalithopoulos.com/"
+                      className="ml-1 text-blue-600 hover:underline"
+                    >
                       Learn more
                     </a>
                   </p>
@@ -309,8 +319,12 @@ const Home = () => {
               </Card>
               <Card className="text-center">
                 <CardHeader>
-                  <div className="mx-auto w-20 h-20 rounded-full bg-gradient-to-r from-purple-400 to-pink-500 flex items-center justify-center mb-4">
-                    <span className="text-white font-bold text-xl">BT</span>
+                  <div className="relative mx-auto w-20 h-20 rounded-full overflow-hidden mb-4">
+                    <img
+                      src={bt}
+                      alt="Dr. Braden Tierney"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <CardTitle>
                     <a href="https://www.bradentierney.com/">
@@ -336,14 +350,23 @@ const Home = () => {
                     of new therapeutics, Braden is pushing the boundaries of
                     biology and biotechnology - all while trail running, scuba
                     diving and hunting down the best Waffle Houses in town.
-                    <a href="https://www.bradentierney.com/" className="ml-1 text-blue-600 hover:underline">Learn more</a>
+                    <a
+                      href="https://www.bradentierney.com/"
+                      className="ml-1 text-blue-600 hover:underline"
+                    >
+                      Learn more
+                    </a>
                   </p>
                 </CardContent>
               </Card>
               <Card className="text-center">
                 <CardHeader>
-                  <div className="mx-auto w-20 h-20 rounded-full bg-gradient-to-r from-orange-400 to-red-500 flex items-center justify-center mb-4">
-                    <span className="text-white font-bold text-xl">JW</span>
+                  <div className="relative mx-auto w-20 h-20 rounded-full overflow-hidden mb-4">
+                    <img
+                      src={jw}
+                      alt="Dr. Jérôme Waldispühl"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <CardTitle>
                     <a href="https://www.cs.mcgill.ca/~jeromew/">
@@ -372,7 +395,12 @@ const Home = () => {
                     developing tools to decode RNA or reimagining how we
                     interact with science, Jérôme is always pushing boundaries —
                     in research and beyond.
-                    <a href="https://www.cs.mcgill.ca/~jeromew/" className="ml-1 text-blue-600 hover:underline">Learn more</a>
+                    <a
+                      href="https://www.cs.mcgill.ca/~jeromew/"
+                      className="ml-1 text-blue-600 hover:underline"
+                    >
+                      Learn more
+                    </a>
                   </p>
                 </CardContent>
               </Card>
