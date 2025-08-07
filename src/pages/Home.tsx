@@ -16,6 +16,7 @@ import {
   Microscope,
   FlaskConical,
 } from "lucide-react";
+import gcmlogo from "/public/gcmlogo.png";
 
 const day1Schedule = [
   { time: "8:30 AM", activity: "Registration & Refreshments" },
@@ -72,7 +73,7 @@ const Home = () => {
       {/* Header */}
       <header className="px-4 lg:px-6 h-16 flex items-center bg-white/80 backdrop-blur-sm border-b sticky top-0 z-50">
         <a href="#">
-          <img src="igem-gcm/gcmlogo.PNG" alt="iGEM GCM 2025" className="h-16" />
+          <img src={gcmlogo} alt="iGEM GCM 2025" className="h-16" />
         </a>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <a
@@ -457,7 +458,7 @@ const Home = () => {
 
       {/* Footer */}
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-white h-16">
-        <img src="igem-gcm/gcmlogo.PNG" alt="iGEM GCM 2025" className="h-12" />
+        <img src={gcmlogo} alt="iGEM GCM 2025" className="h-12" />
         <p className="text-xs text-gray-600 sm:ml-auto">
           © 2025 University of Ottawa iGEM Team. All rights reserved.
         </p>
